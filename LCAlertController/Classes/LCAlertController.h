@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 子类重写 */
 - (BOOL)isModal;
 - (CGFloat)containerCircular;
+- (CGFloat)horizontalEdge;
 @end
 
 NS_ASSUME_NONNULL_END

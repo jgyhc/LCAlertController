@@ -40,15 +40,18 @@
     [self.view addSubview:self.containerView];
     [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.view);
-        make.height.mas_equalTo(100);
-        make.left.mas_equalTo(30);
-        make.right.mas_equalTo(-30);
+        make.left.mas_equalTo([self horizontalEdge]);
+        make.right.mas_equalTo(-[self horizontalEdge]);
     }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self show];
+}
+
+- (CGFloat)horizontalEdge {
+    return 30;
 }
 
 - (BOOL)isModal {
