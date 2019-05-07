@@ -1,0 +1,19 @@
+PODS:
+  - LCAlertController (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LCAlertController (from `../`)
+
+EXTERNAL SOURCES:
+  LCAlertController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LCAlertController: 4a30bffe6eb33badd2aac79e9095f84d892297ff
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 48b1cd0a0ab53b2eaf8b5384176d2a25139c1f23
+
+COCOAPODS: 1.4.0

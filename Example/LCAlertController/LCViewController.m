@@ -7,6 +7,7 @@
 //
 
 #import "LCViewController.h"
+#import "LCAlertController.h"
 
 @interface LCViewController ()
 
@@ -24,6 +25,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showEvent:(id)sender {
+    LCAlertController *viewController = [[LCAlertController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

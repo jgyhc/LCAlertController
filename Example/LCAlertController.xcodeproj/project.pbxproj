@@ -64,9 +64,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3D9C6FF62F4A526801EF604 /* Pods-LCAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCAlertController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCAlertController_Tests/Pods-LCAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BCAD4DEA71B18FE0745D7C98 /* LCAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LCAlertController.podspec; path = ../LCAlertController.podspec; sourceTree = "<group>"; };
-		E03BE9E887A86D6A81A4CAF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		ED3D655A191F584860E678C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BCAD4DEA71B18FE0745D7C98 /* LCAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LCAlertController.podspec; path = ../LCAlertController.podspec; sourceTree = "<group>"; };
+		E03BE9E887A86D6A81A4CAF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ED3D655A191F584860E678C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jgyhc;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = K65QSBQXTG;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -368,10 +371,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LCAlertController_Example/Pods-LCAlertController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LCAlertController/LCAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,6 +538,7 @@
 			baseConfigurationReference = 12AA9CD45B28D2DE9BC912B7 /* Pods-LCAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K65QSBQXTG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCAlertController/LCAlertController-Prefix.pch";
 				INFOPLIST_FILE = "LCAlertController/LCAlertController-Info.plist";
@@ -548,6 +554,7 @@
 			baseConfigurationReference = 0B2FE36853FD94A22542BFBB /* Pods-LCAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K65QSBQXTG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCAlertController/LCAlertController-Prefix.pch";
 				INFOPLIST_FILE = "LCAlertController/LCAlertController-Info.plist";
