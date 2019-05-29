@@ -27,3 +27,11 @@ jgyhc, jgyhc@foxmail.com
 ## License
 
 LCAlertController is available under the MIT license. See the LICENSE file for more info.
+
+## 使用
+```
+    LCActionSheetViewController *viewController = [[LCActionSheetViewController alloc] initWithTitles:@[@"确定", @"asdalsk", @"阿达的快乐", @"按时打卡了敬爱空间的"] handler:^(LCActionSheet * _Nonnull actionSheet, NSString * _Nonnull title, NSInteger idex) {
+        NSLog(@"点击了%@", title);
+    }];
+    [self presentViewController:viewController animated:YES completion:nil];
+```
