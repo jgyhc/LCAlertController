@@ -26,6 +26,10 @@
     return self;
 }
 
+- (UIModalPresentationStyle)modalPresentationStyle {
+    return UIModalPresentationOverCurrentContext;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

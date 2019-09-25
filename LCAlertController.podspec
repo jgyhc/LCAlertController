@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LCAlertController'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '一个简单的弹窗 LCAlertController.'
 
 # This description is used to generate tags and improve search results.
